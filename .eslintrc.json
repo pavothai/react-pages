@@ -3,12 +3,7 @@
 		"browser": true,
 		"es2021": true
 	},
-	"extends": [
-		"eslint:recommended",
-		"plugin:react/recommended",
-		"google",
-		"plugin:prettier/recommended"
-	],
+	"extends": ["eslint:recommended", "plugin:react/recommended", "google", "plugin:prettier/recommended"],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -19,7 +14,8 @@
 	"plugins": ["react"],
 	"rules": {
 		"require-jsdoc": "off",
-		"prettier/prettier": ["error", { "singleQuote": true }]
+		"no-unused-vars": "warn"
+		// "prettier/prettier": "error"
 	},
 	"settings": {
 		"react": {
